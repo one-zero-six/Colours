@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ColourLog"
+dynamic = ["version"]
+authors = [
+  { name="Edel Perez", email="edel.perez@outlook.com" },
+]
+description = "Colorize your CLI log messages."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/edel-p/Colorize"
+"Bug Tracker" = "https://github.com/edel-p/Colorize/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "ColourLog.__init__.VERSION"}
